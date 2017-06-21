@@ -114,9 +114,10 @@ body {
 
 
 #wrapper{
-  width: 100vw;
+  width: 99vw;
   overflow: hidden;
   background-color: rgb(242,242,242);
+  margin: 0 auto;
 }
 
 /*/////////////////////////////
@@ -543,11 +544,22 @@ h1 .paragraphName.image{
 
 @media screen and (max-width: 450px){
 
-
-
-  #contactForm{
-    display: none;
+  .home{
+    width: auto;
+    margin: 0px auto;
+    border-radius: 0px;
+    padding: 10px;
+  
   }
+
+  .right{
+
+  text-align: left;
+  }
+
+  /*#contactForm{
+    display: none;
+  }*/
 
   #welcomeCenter {
     width: 60%;
