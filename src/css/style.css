@@ -140,6 +140,9 @@ a:hover {
 h1 {
   font-size: 2em;
   
+  padding: 10px 80px;
+  line-height: 1.1;
+  
 }
 h2 {
   font-size: 1.5em;
@@ -595,9 +598,9 @@ h1 .paragraphName.image{
     height: 47vh;
 }
 
- #menu {
+ /*#menu {
     display:none;
-  }
+  }*/
   
   .slicknav_menu {
     display:block;
