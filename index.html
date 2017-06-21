@@ -26,7 +26,7 @@
 						<div id="logo" class="headerItem">
 							<a href="C:/Users/Rafa/Desktop/ruttar/onepage/dev/www/index.html"><img src="src/img/logo.png"></a>
 						</div>							
-						<ul id="menu" class="headerItem slicknav">					
+						<ul id="menu" class="headerItem">					
 							<li><a href="#home">accueil</a></li>							
 							<li><a href="#services">services</a></li>
 							<li><a href="#porfolio">portfolio</a></li>
@@ -52,9 +52,9 @@
 			<section id="contactForm">
 				<div>
 				<div id="cross">
-					<img src="../src/img/cross3.png">
+					<img src="src/img/cross3.png">
 				</div>
-					<form>
+					<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
 						<input type="text" name="nom" placeholder="Votre Nom"><br>
 						<input type="email" name="email" placeholder="Votre adresse email"><br>
 						<input class="inputText" type="textarea" rows="10" cols="30" placeholder="Laissez nous un petit message"><br>
@@ -131,6 +131,7 @@
 			
 			
 			<script src="app/javascript/myCode.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 		</div>
 	</body>
 </html>

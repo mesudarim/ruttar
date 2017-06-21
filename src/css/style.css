@@ -114,7 +114,7 @@ body {
 
 
 #wrapper{
-  width: 99vw;
+  width: 97vw;
   overflow: hidden;
   background-color: rgb(242,242,242);
   margin: 0 auto;
@@ -397,6 +397,7 @@ section article.article{
 
 #contactForm.show{
   left: 2vw;
+  z-index: 6;
 }
 
 #contact{
@@ -544,11 +545,23 @@ h1 .paragraphName.image{
 
 @media screen and (max-width: 450px){
 
+#cross img{
+  height: 20px;
+}
+
+  .slicknav_menu {
+  display: block;
+}
+
+  #wrapper{
+  width: 100vw;
+  }
+
   .home{
     width: auto;
     margin: 0px auto;
     border-radius: 0px;
-    padding: 10px;
+    padding: 5px;
   
   }
 
@@ -582,6 +595,15 @@ h1 .paragraphName.image{
     height: 47vh;
 }
 
+ #menu {
+    display:none;
+  }
+  
+  .slicknav_menu {
+    display:block;
+  }
+
+/*
 #menu{
   display: none;
 
@@ -591,9 +613,6 @@ h1 .paragraphName.image{
   display: block;
   z-index: 10;
 }
-
-/*
-
 .js #menu {
     display:none;
   }
@@ -625,6 +644,8 @@ h1.paragraphNameLeft{
   font-size: 20px;
   height: 50px;
   margin-bottom: 10px;
+  border-radius: 0px;
+  background: rgba(20,55,113,0.8);
 }
 
 h1.paragraphNameRight{  
@@ -635,6 +656,8 @@ h1.paragraphNameRight{
   font-size: 20px;
   height: 50px;
   margin-bottom: 22px;
+  border-radius: 0px;
+  background: rgba(20,55,113,0.8);
 }
 
 .left p{
