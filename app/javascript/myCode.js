@@ -58,13 +58,18 @@ $("#start").on("click", function(){
     $("#start").addClass("hide");
     $("#home").addClass("home");
     //$("#firstSection").addClass("fullWidth");
-    $("#welcomeCenter").removeClass("topMargin")    
+    $("#welcomeCenter").removeClass("topMargin")   
+    $("body").removeClass("overFlowHidden")
+    setTimeout(function(){
+     $("#welcomeRight").addClass("hide"); 
+     $("#welcomeLeft").addClass("hide"); 
+    }, 1000); 
 })
 
 $("a").on("click", function(){
     $("#welcomeLeft").addClass("hide");
     $("#welcomeRight").addClass("hide");
-    $("body").removeClass("overFlowHidden")
+    
 })
 
 $("#contact").on("click", function(){
