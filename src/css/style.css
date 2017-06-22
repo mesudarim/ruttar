@@ -357,14 +357,14 @@ section article.article{
 }
 
 #contactForm{
-    height: 95vh;
+    height: 80vh;
     width: 95vw;
     background-color: rgba(3, 13, 23,0.9);
     color: #fff;
     border: solid black;
     margin: 0 auto;
     position: fixed;
-    top: 12px;
+    top: 90px;
     left: 100vw;
     z-index: 5;
     transition : 1500ms;
