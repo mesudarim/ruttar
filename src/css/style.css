@@ -177,6 +177,7 @@ WELCOME PAGE
 #welcomeSection{
   width: 100vw;
   overflow: hidden;
+  background-image: url(../img/noise-pattern.PNG) repeat cover;
 }
 
 #welcomePage{
@@ -547,6 +548,10 @@ h1 .paragraphName.image{
 }
 
 @media screen and (max-width: 450px){
+
+#welcomePage{
+    background-image: url(../img/routard2.JPG);
+  }
 
 #cross img{
   height: 20px;
