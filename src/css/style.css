@@ -550,7 +550,9 @@ h1 .paragraphName.image{
 @media screen and (max-width: 450px){
 
 #welcomePage{
-    background-image: url(../img/routard2.jpg);
+    background-image: url(../img/routard3.JPG);
+    background-color: black;
+    /*background-size: 113%;*/
   }
 
 #cross img{
@@ -599,8 +601,8 @@ h1 .paragraphName.image{
   }
 
   #welcomePage.relative {
-    top: 10px;
-    height: 47vh;
+    top: 77px;
+    height: 41vh;
 }
 
  /*#menu {
