@@ -1,138 +1,150 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
-		<title>ruttar - web solutions</title>
+		<title>ruttar - web designer</title>
 
 		<link href="src/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="src/css/style.css" rel="stylesheet" type="text/css" />
-		
-		
+
+
 		<!-- Fichiers Javascript et jquery/jqueryUI -->
 		<script type="text/javascript" src="app/jquery-ui/external/jquery/jquery.js"></script>
 		<script type="text/javascript" src="app/jquery-ui/jquery-ui.js"></script>
-		
+
 		<link href="app/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
 		<link href="app/jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
 		<link href="app/jquery-ui/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="app/javascript/slicknav/jquery.slicknav.js"></script>
 		<link href="app/javascript/slicknav/slicknav.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Dosis|Questrial|Raleway:300" rel="stylesheet">
 	</head>
-	
-	<body class="overFlowHidden">	
+
+	<body class="overFlowHidden">
 		<div id="wrapper">
-			<header>
-					<nav role="navigation">	
-						<div id="logo" class="headerItem">
-							<a href="C:/Users/Rafa/Desktop/ruttar/onepage/dev/www/index.html"><img src="src/img/logo.png"></a>
-						</div>							
-						<ul id="menu" class="headerItem">					
-							<!--<li><a href="#home">accueil</a></li>							
-							<li><a href="#services">services</a></li>
-							<li><a href="#porfolio">portfolio</a></li>-->
-							<li id="contact">contact</li>
-						</ul>
-						<!--<ul id="menu" class="">					
-							<li><a href="#home">accueil</a></li>							
-							<li><a href="#services">services</a></li>
-							<li><a href="#porfolio">portfolio</a></li>
-							<li id="contact">contact</li>-->
-						</ul>
-					</nav>
-			</header>
-
-			<section id="welcomeSection">
-				<div id="welcomePage" class="absolute"></div><!--<img src="../src/img/routard.JPG" alt="Image d'un couché de soleil avec un profil de routard (d'ou ruttar.ch) dessiné par les nuages.">-->
-				<div id="welcomeLeft" class="ruttar"><img src="src/img/ruttarLeft.png"><br><br>web so</div>
-				<div id="welcomeRight" class="ruttar"><img src="src/img/ruttarRight.png"><br><br>lutions</div>
-				<div id="welcomeCenter" class="topMargin">
-					<button id="start">C'est parti!</button>
-				</div>
-			</section>
-			<section id="contactForm">
-				<div>
-				<div id="cross">
-					<img src="src/img/cross3.png">
-				</div>
-					<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
-						<input type="text" name="nom" placeholder="Votre Nom"><br>
-						<input type="email" name="email" placeholder="Votre adresse email"><br>
-						<input class="inputText" type="textarea" rows="10" cols="30" placeholder="Laissez nous un petit message"><br>
-						<input type="submit" name="Envoyer">
-					</form>
-				</div>
-			</section>
-			<section id="firstSection">
-				<article id="home">
-					<h1>Ce site est encore en construction, mais vous pouvez déjà nous contacter!</h1>
-					<!--<p class="citation">"Mais ma route m'entraîne toujours, désir de concrétiser un symbole, de posséder l'unique beauté que l'on nomme: liberté "</p>
-					<p class="author">Michel Corringe</p>
-
-					<div class="left">
-						<h1 class="paragraphNameLeft">Concept</h1>
-					
-			       		<p>Conceptualiser correctement un site internet est un des points forts de <strong>ruttar.ch</strong>. Les idées qui feront naitre le site, seront celles qui définirons s’il s'agit d'un de plus parmi les autres, ou celui qui va sortir du lot, celui sur lequel le visiteur reviendra.</p>
-			       	</div>
-					
-					<div class="right">
-						<h1 class="paragraphNameRight">Réalisation</h1>
-						<p>Rien n'est laissé au hasard. L'expérience utilisateur doit procurer au visiteur une sensation de bien être, autant dans la facilité de navigation que dans l'esthétique visuelle. L'harmonie doit être omniprésente et l'utilisation intuitive.</p>					
-						
+			<!-- <div class="mainPage"> -->
+				<div class="welcomeLeft">
+					<header>
+							<nav role="navigation">
+								<ul id="menu" class="headerItem">
+									<li ><a href="#about" id="aboutMenu">A propos</a></li>
+									<li><a href="#portfolio">Portfolio</a></li>
+									<li id="contact">Contact</li>
+								</ul>
+							</nav>
+					</header>
+					<div id="arrowUp" class="hide">
+						<img src="src/img/arrowUp.png" class="arrowUpImg">
 					</div>
-					<div class="left">
-						<h1 class="paragraphNameLeft">Sur mesure</h1>
-						<p>La création d'un site ou d'une application est un long chemin qui est fait de plusieurs étapes. Toujours à l'écoute, nous serons à vos côtés tout au long de l'aventure. Notre équipe adapte la création du site à vos besoin et à votre sensibilité tout en apportant nos conseils de profesionnels.</p>
-					</div>			
+				</div>
 
-				</article>
-			</section>
+				<div class="welcomeRight">
+				</div>
 
-			<section id="sectionServices">
-				<div class="cover"></div>
-				<article id="services" class="article">
-					<p class="citation">""Le voyage pour moi, ce n'est pas arriver, c'est partir. C'est l'imprévu de la prochaine escale, c'est le désir jamais comblé de connaître sans cesse autre chose, c'est demain, éternellement demain." "</p>
-					<p class="author">Roland Dorgelès</p>
-
-					<div class="left">
-						<h1 class="paragraphNameLeft">Sites</h1>
-			       		<p>Conséptualiser correctement un site internet est un des points forts de <strong>ruttar.ch</strong>. 
-						Le site ou l'application doivent faire un tout. Du nom de domain, en passant par les couleurs, des images au contenu, tout doit s'alier pour faire du nouveau site, non pas un de plus parmi tant d'autres, mais celui qui va sortir du lot, celui sur lequel le visiteur aimera revenir.</p>
-			       	</div>
-					
-					<div class="right">
-						<p>Rien n'est laissé au hasard. La réalisation doit procuré au visiteur autant une facilité de navigation qu'une sensation agréable.</p>
-						<h1 class="paragraphNameRight">Applications</h1>
-					</div>					
-
-				</article>
-			</section>
-			<section id="sectionPortfolio">
-				<div class="cover"></div>
-				<article id="porfolio" class="article">
-					<p class="citation">"...on arrive, on repart, on n'est jamais bien nulle part "</p>
-				<p class="author">Le Chinois</p>
-				<div class="title left">
-						<h1><span class="paragraphNameRight image"><img src="../src/img/apnea.png"></span></h1>
+				<div class="logoRight">
+					<img src="src/img/rightRuttr.png" class="welcomeImg">
+					<span class="webDesigner">WEB Designer</span>
+					<div class="logoLeft">
+						<img src="src/img/leftRuttar.png" class="welcomeImg">
 					</div>
-			       	<div class="left">
-			       		<p>Conséptualiser correctement un site internet est un des points forts de <strong>ruttar.ch</strong>. 
-						Le site ou l'application doivent faire un tout. Du nom de domain, en passant par les couleurs, des images au contenu, tout doit s'alier pour faire du nouveau site, non pas un de plus parmi tant d'autres, mais celui qui va sortir du lot, celui sur lequel le visiteur aimera revenir.</p>
-			       	</div>
-					
-					<div class="right">
-						<p>Rien n'est laissé au hasard. La réalisation doit procuré au visiteur autant une facilité de navigation qu'une sensation agréable.</p>
+					<div class="arrowDown">
+						<a href="#about"><img src="src/img/arrowDown.png" class="arrowDownImg"></a>
 					</div>
-					<div class="title right">
-						<h1><span class="paragraphNameRight image">Applications</span></h1>
-					</div>	-->		
+				</div>
 
-				</article>
-			</section>
-			
-			
-			
-			<script src="app/javascript/myCode.js"></script>
-			<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+				<section id="sectionAbout">
+					<article id="about">
+
+							<div class="leftAbout">
+								<h3>A PROPOS</h3>
+								<h2>RAPHAEL RUTA</h2>
+									<h1 id="webdesigner"><span class="bold">WEB</span> Designer</h1>
+
+									<!-- <p class="competance">Mes compétances</p> -->
+
+									<p class="title1"><strong>WEB DESIGN:</strong></p>
+
+									<p class="title2"><strong>Création de site internet</strong></p>
+						    	<ul>
+										<li>Concept</li>
+										<li>Ergonomie</li>
+										<li>Charte graphique</li>
+										<li>Réalisation</li>
+						    	</ul>
+
+									<p class="title1"><strong>WEB DEVELOPPMENT:</strong></p>
+
+									<p class="title2"><strong>Création d'application web</strong></p>
+						    	<ul>
+										<li>Analyse des besoins</li>
+										<li>Concéption de l'application</li>
+										<li>Ergonomie</li>
+										<li>Charte graphique</li>
+						    	</ul>
+							</div>
+							<div class="rightAbout">
+								<img src="./src/img/halfStones.jpg" alt="">
+							</div>
+							<div class="clear">
+							</div>
+
+					</article>
+				</section>
+
+				<section id="sectionPortfolio">
+					<h3>PORTFOLIO - Quleques exemples</h3>
+					<article id="portfolio" class="article">
+							<div class="left paragraphe">
+								<p class="title1"><strong><span class="bold">WEB</span> DESIGN</strong></p>
+								<p class="bold">Un site:</p>
+								<p class="bold link"><a href="http://www.apneaclubgeneve.ch/">apneaclubgeneve.ch</a><br><br></p>
+								<p class="bold">Un concept:</p>
+								<p>Le site en question est celui du club d'Apnée de Genève, et en apnée, on recherche la profondeur. C'est là que le site vous emènera! </p>
+								<p>Retenez votre souffle et voir!  </p>
+							</div>
+
+							<div class="right image">
+								<a href="http://www.apneaclubgeneve.ch/"><img src="./src/img/apnea.jpg"></a>
+							</div>
+							<div class="clear">
+							</div>
+						</article>
+						<article id="webapp" class="article">
+							<div class="left renaud">
+								<img src="./src/img/renaudagogo.png">
+							</div>
+							<div class="left" id="portWebApp">
+								<p class="title1"><strong><span class="bold">WEB</span> APPLICATION</strong></p>
+								<p class="bold">Un artiste sur scène - 50 reprises de Renaud - une application web</p>
+								<p>C'est le public, qui depuis son téléphone portable, après avoir répondu à un quiz sur la vie de Renaud, choisi en direct les chansons qu'il veut écouter! L'artiste sur scène reçoit les demandes du public sur sa tablette.</p>
+								<p class="bold">Du sur mesure</p>
+								<p>L'artiste peut du côté admin, à sa guise, changer, ajouter ou effacer autant les questions du quiz que les chansons proposées, par contre c'est lui qui les chante dans les tous les cas!</p>
+								<p>Le fonctionnement de l'application est expliquée ici.</p>
+							</div>
+
+							<div class="clear">
+							</div>
+				</section>
+
+				<section id="contactForm">
+					<div>
+					<div id="cross">
+						<img src="src/img/cross3.png">
+					</div>
+						<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
+							<input type="text" name="nom" placeholder="Votre Nom"><br>
+							<input type="email" name="email" placeholder="Votre adresse email"><br>
+							<input class="inputText" type="textarea" rows="10" cols="30" placeholder="Laissez nous un petit message"><br>
+							<input type="submit" name="Envoyer">
+						</form>
+					</div>
+				</section>
+
+
+
+				<script src="app/javascript/myCode.js"></script>
+				<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+			<!-- </div> -->
 		</div>
 	</body>
 </html>
