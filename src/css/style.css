@@ -1,377 +1,406 @@
-﻿/*//////////////////////////////
+/*//////////////////////////////
 ///FONT CSS
 ///////////////////*/
 
 @font-face {
     font-family: 'saman';
     src: url('../font/saman/SAMARN__.TTF') format('truetype'),
-        
 }
 
 @font-face {
     font-family: 'comfortaa';
-    src: url('../font/comfortaa/Comfortaa_Regular.ttf') format('truetype'),; 
+    src: url('../font/comfortaa/Comfortaa_Regular.ttf') format('truetype'),;
     font-weight: 500;
     font-style: normal;
 }
 
-/*.clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-.clearfix {
-    display: inline-block;
-}
-ul.nav li a.selected, nav li a.selected {
-    background: #FF0000;
-    color: #FFF;
-}
-html[xmlns] .clearfix {
-    display: block;
-}
-* html .clearfix {
-    height: 1%;
-
+@font-face {
+    font-family: 'levenim';
+    src: url('../font/levenim2/ufonts.com_levenim-mt.woff') format('truetype'),;
 }
 
-
-
-nav ul, nav ol {
-  color: #fff;
-  font-size: 2em;
-  list-style: outside none none;
-  top : 25%;
-  position : relative;
+@font-face {
+    font-family: 'pirulen';
+    src: url('../font/pirulen/pirulen rg.ttf') format('truetype'),;
 }
 
-article {
-  padding: 5% 20%;
+@font-face {
+    font-family: 'caviar';
+    src: url('../font/caviar/CaviarDreams.ttf') format('truetype'),;
 }
 
-
-ol {
-  list-style: inside none decimal;
-}
-ul {
-  list-style: inside none disc;
-}
-ol, ul{
-	margin-bottom : 1em;
-}
-pre {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #aaa;
-}
-
-
-
-ul.nav {
-  position: fixed;
-  list-style : none;
-  text-align : center;
-  width : 100%;
-}
-ul.nav li {
-  display: inline-block;
-  margin-right: 1em;
-  position: relative;
-}
-ul.nav li a{
-	display : block;
-	width : 20px;
-	height : 10px;
-	background-color : #000;
-}*/
 
 body {
-  background: rgb(242, 242, 242) url("../img/background.jpg") repeat scroll 0 0;
-  color: #8b8d87;
-  font-family: helvetica,arial,times;
+  /*background:linear-gradient(to bottom, rgb(12,12,14), white);*/
+  background: #fff;
+  /*background: rgb(7,7,7);*/*/
+  /*color: #8b8d87;*/
+  color: #404040;
+  color: rgb(80,92,105);
+  /*color: rgb(245,245,245);;*/
+  /*font-family: helvetica,arial,times;*/
+  font-family: 'Questrial', sans-serif;
+  /*font-family: 'caviar', arial;*/
   font-size: 100%;
   line-height: 1.5em;
   /*width: 100vw;*/
-  background-color: rgba(242,242,242);
+  background-color: rgba(0,0,0);
+  position: relative;
 }
 
-.cover {
-  background: url(../img/routard.JPG);
-  background-attachment : fixed;
-  background-size : cover;
-  height: 500px;
+section {
+  margin-bottom: 150px;
 }
 
-#sectionPortfolio .cover{
-  background-image: url("../img/stones.jpg");
+.clear{
+  clear: both;
 }
 
-#sectionServices .cover{
-  background-image: url("../img/mountain.jpg");
-}
-
-
-#wrapper{
-  width: 100vw;
-  overflow: hidden;
-  background-color: rgb(242,242,242);
-  margin: 0 auto;
+.hide{
+  opacity: 0;
 }
 
 /*/////////////////////////////
 GENERAL
-/////////////////////////////////*/
-
-p {
-  line-height: 1.5em;
-  margin-bottom: 3em;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover {
-  color : rgba(225,0,000,0.8);
-}
+////////////////////////////////*/
 
 h1 {
-  font-size: 2em;
-  
-  padding: 10px 80px;
-  line-height: 1.1;
-  
-}
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.3em;
-}
-h3 {
   font-size: 1.3em;
+  padding: 0px 0px 20px 53px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.8em;
   margin-bottom: 0.3em;
 }
 
-.citation{
-  text-align: center;
-  font-size: 25px;
-  font-style: italic;
+h3 {
+  margin-top: 50px;
+  font-size: 2.3em;
+  margin-bottom: 1.3em;
+  font-weight: bold;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+p {
+  line-height: 1.2em;
   margin-bottom: 1em;
+  font-size: 1.2em;
+  letter-spacing: .03em;
 }
 
-.author{
-  text-align: right;
+p.title1{
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+
+#sectionAbout p.title1{
+  margin-top: 65px;
+}
+
+p.title2{
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+section article ul{
+  margin-bottom: 50px;
   font-size: 18px;
-  margin-bottom: 9em;
 }
 
-.hide{
-  display: none;
-}
 
-/*////////////////////////////
+/*///////////////////////////
 WELCOME PAGE
 /////////////////////////////////*/
 
-#welcomeSection{
-  width: 100vw;
-  overflow: hidden;
-  background-image: url(../img/noise-pattern.PNG) repeat cover;
-}
 
-#welcomePage{
-    background-image: url(../img/routard.JPG);
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;    
-    top: 0;
-    transition : 2000ms;
-    z-index: 5;
-}
-
-#welcomeCenter{
-  margin: 0 auto;
-  position: relative;
-  width: 25%;
-  bottom: 10%;
-  z-index: 6;
-  
-}
-
-#start{
-  width: 100%;
-  color: white;
-  font-size: 1.5em;
-  font-weight: lighter;
-  min-height: 60px;
-  height: auto;
-  background-color: rgba(255,255,255,0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  border-radius: 4px;
-  position: relative;
-  z-index: 6;
-  cursor: pointer;
-}
-
-#welcomeCenter.topMargin{
-  margin-top: 60vh;
-}
-
-.absolute{
-  position: absolute;
-}
-
-#welcomeLeft{
-  position: absolute;
-  top: 20%;
-  right: 50%;
-  font-size: 30px;
-  transition : 2000ms;
+.welcomeLeft{
+  position: fixed;
+  font-size: 20px;
+  transition : 1500ms;
   color: #fff;
   text-align: right;
-  z-index: 6;
-}
-
-#welcomeRight{
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  font-size: 30px;
-  transition : 2000ms;
-  color: #fff;
-  z-index: 6;
-}
-
-#welcomeSection img{
-  width: 200px;
-}
-
-
-header{
-  position: relative;
-  top: -80px;
-  transition : 2000ms;
   z-index: 1;
-  background-color: #223B5F;
-  z-index: 6;
+  background-color: rgb(244, 120, 38);
+  height: 100vh;
+  width: 50%;
+  top: 0px;
 }
 
-nav{
-  height: 80px;
-  max-width: 1084px;
-  width: 80vw;
-  background-color: #fff;
+.welcomeRight{
   position: relative;
-  z-index: 3;
-  background: #223B5F;
+  height: 100vh;
+  margin-left: 50%;
+  width: 50%;
+  transition : 1500ms;
   color: #fff;
-  margin: 0 auto;
+  z-index: 1;
+  background: url(../img/routard.JPG) center center;
+  top:0px;
 }
 
-nav li{
-  display: inline-block;
-  max-width: 542px;
+.headerItem li{
+  background-color: rgb(244, 120, 38);
+  border: solid 2px #fff;
+  width: 150px;
+  margin-top: 30px;
+  text-align: center;
   position: relative;
-  padding: 25px 0px;
-  margin: 0 2vw;
+  right: 0px;
 }
 
 nav ul{
-  right: 0;
-  position: absolute;
-  font-size: 18px;
-  height: 80px;
+  margin-top: 50vh;
 }
 
-.topZero{
-  top: 0;
+nav ul li a {
+    display: block;
 }
 
-#welcomeRight.farRight{
-  left: 125%;
-}
-
-#welcomeLeft.farLeft{
-  right:125%;
-}
-
-#welcomePage.relative{
- position: relative;
-    top: 70px;
-    height: 40vh;
-}
-
-.hide{
-  display: none;
-}
-
-.home{
-  position: relative;  
-  background: #fff;
-  width: 80%;
-  max-width: 1024px;
-  margin: 20px auto;
-  border-radius: 10px;
-  padding: 20px;
-  overflow: hidden;
-
-}
-
-.fullWidth{
-  width: auto;
+nav li{
+  max-width: 542px;
   position: relative;
-  top: -500px;
-  background: #fff;
+  margin: 0 2vw;
+  margin-left: 65%;
+  transition : 700ms;
 }
 
-#firstSection{
-  transition : 2000ms;
-  background-color: rgba(242,242,242);
+nav li a{
+  transition : 700ms;
+  position: relative;
+  padding: 12px 0px;*/
+  margin: 0 2vw;
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact{
+  padding: 12px 0px;
+  cursor: pointer;
+}
+
+.logoRight{
+  position: absolute;
+  margin-left: 50%;
+  top: 0;
+  z-index: 2;
+}
+
+.logoLeft{
+  position: absolute;
+  top: 0;
+  margin-left: -100%;
+  z-index: 2;
+}
+
+.welcomeImg {
+  padding-top: 90px;
+  width: 300px;
+  z-index: 2;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+#arrowUp{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 52%;
+  bottom: 59px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+
+
+.arrowDown{
+  margin-top: 60vh;
+  position: relative;
+  right: 28px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.arrowDown img{
+  transition: 500ms;
+}
+
+li:hover a {
+    color: inherit;
+}
+
+nav ul li:hover,  nav ul li:hover a, .selected, #contact.selected{
+  color : rgb(244, 120, 38);
+  background: #fff;
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+.webDesigner{
+  letter-spacing: 8px;
+  position: absolute;
+  right: 0px;
+  top:50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+/*///////////////////////////////////////////////////
+/////Added-removed after click
+///////////////////////////////////////////////*/
+
+.small{
+  width: 22%;
+}
+
+.big{
+  margin-left: 22%;
+  width: 78%;
+}
+
+.center{
+  margin-left: 20%;
 }
 
 .overFlowHidden{
   overflow: hidden;
 }
 
-.fixed{
-  position: fixed;
-  width: 100vw;
+.menuUp{
+  margin-top: 32vh;
+  transition: 1000ms;
 }
 
-section article.article{
-  position: relative;
-  background: #fff;
-  width: 80%;
-  max-width: 1024px;
-  margin: 20px auto;
-  border-radius: 10px;
-  padding: 20px;
+/*/////////////////////////////////////
+//////////FIRST SECTION
+///////////////////////////////////*/
+
+#about{
   overflow: hidden;
+      width: 100%;
+}
+
+#sectionAbout{
+  margin-top: 10vh;
+  transition : 2000ms;
+  margin-left: 25%;
+}
+
+.competance{
+  line-height: 1.2em;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+}
+
+.rightAbout{
+  position: relative;
+  width: 55%;
+  float: right;
+  padding-right: 4%;
+}
+
+.leftAbout{
+  position: relative;
+  width: 40%;
+  float: left;
+}
+
+.rightAbout img{
+  position: relative;
+  height: 100%;
+  border-radius: 0px;
+}
+
+/*/////////////////////////////////////
+//////////SECOND SECTION
+///////////////////////////////////*/
+
+#sectionPortfolio{
+  margin-top: 10vh;
+  transition : 2000ms;
+  margin-left: 25%;
+  position: relative;
+}
+
+.paragraphe{
+  width: 25%;
+}
+
+.left{
+  float: left;
+}
+
+.image{
+  position: relative;
+  width: 70%;
 
 }
+
+.right{
+    float: right;
+}
+
+.right.image img{
+  width: 600px;
+  border-radius: 0px;
+}
+
+article div img{
+  width: 500px;
+}
+
+.link a{
+  text-decoration: none;
+  color: #8b8d87;
+}
+
+#portWebApp{
+  width: 68%;
+  margin-left: 80px;
+  max-width: 600px;
+}
+
+.renaud{
+  width: 22%;
+}
+
+.renaud img{
+  width: 250px;
+  border-radius: 0px;
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+/*/////////////////////////////////////
+///////////CONTACT FORM
+///////////////////////////////////*/
 
 #contactForm{
-    height: 80vh;
-    width: 95vw;
+    height: 100vh;
+    width: 78%;
     background-color: rgba(3, 13, 23,0.9);
     color: #fff;
     border: solid black;
     margin: 0 auto;
     position: fixed;
-    top: 90px;
-    left: 100vw;
-    z-index: 5;
-    transition : 1500ms;
+    margin-left: 100%;
+    z-index: 2;
+    transition : 500ms;
+    top: 0;
 }
 
 #contactForm input{
-  font-size: 20px;
+  font-size: 1.5em;
   margin: 4% 10%;
   width: 80%;
   height: 5vh;
@@ -396,20 +425,17 @@ section article.article{
 #contactForm input:last-child{
   border: solid white 1px;
   cursor: pointer;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(244, 120, 38,0.6);
+}
+
+#contactForm input:last-child:hover{
+  background-color: rgba(244, 120, 38,1);
+  transition: 1000ms;
 }
 
 #contactForm.show{
-  left: 2vw;
+  margin-left: 22%;
   z-index: 6;
-}
-
-#contact{
-  cursor: pointer;
-}
-
-#contact:hover{
-  color: rgba(225,0,000,0.8);
 }
 
 #cross{
@@ -421,9 +447,204 @@ section article.article{
   cursor: pointer;
 }
 
+#cross:hover{
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  transition : 1000ms;
+}
+
 #cross img{
   height: 50px;
 }
+
+/*
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.citation{
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.author{
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 9em;
+}
+
+.hide{
+  display: none;
+}
+*/
+
+/*
+#welcomeSection{
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(../img/noise-pattern.PNG) repeat cover;
+}
+
+#welcomePage{
+    background-image: url(../img/routard.JPG);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    top: 0;
+    transition : 2000ms;
+    z-index: 5;
+}
+
+#start{
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: lighter;
+  min-height: 60px;
+  height: auto;
+  background-color: rgba(255,255,255,0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 4px;
+  position: relative;
+  z-index: 6;
+  cursor: pointer;
+}*/
+
+
+/*div:not(.float) {
+    clear: both;
+}*/
+
+
+
+/*.cover {
+  background: url(../img/routard.JPG);
+  background-attachment : fixed;
+  background-size : cover;
+  height: 500px;
+}
+
+#sectionPortfolio .cover{
+  background-image: url("../img/stones.jpg");
+}
+
+#sectionServices .cover{
+  background-image: url("../img/mountain.jpg");
+}
+
+
+#wrapper{
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(244, 120, 38);
+  margin: 0 auto;
+}
+
+.mainPage{
+  width: 1024px;
+  margin: 0 auto;
+
+}
+*/
+
+
+
+
+/*
+#welcomeSection img{
+  width: 200px;
+}
+
+
+header{
+  position: relative;
+  top: 35vh;
+  transition: 500ms;
+  z-index: 6;
+  right: -50%;
+}
+
+
+
+
+
+.topZero{
+  top: 0;
+}
+
+#welcomeRight.farRight{
+  left: 125%;
+}
+
+#welcomePage.relative{
+ position: relative;
+    top: 70px;
+    height: 40vh;
+}
+
+
+
+.home{
+  position: relative;
+  background: #fff;
+  width: 80%;
+  max-width: 1024px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+
+}
+
+.fullWidth{
+  width: auto;
+  position: relative;
+  top: -500px;
+  background: #fff;
+}
+
+.fixed{
+  position: fixed;
+  width: 100vw;
+}
+
+section article.article{
+  position: relative;
+  background: #fff;
+  width: 80%;
+  max-width: 1024px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+
+}
+
+
+
+
+
+#contact{
+  cursor: pointer;
+}
+
+#contact:hover{
+  color: rgba(225,0,000,0.8);
+}
+
+
 
 #logo {
   height: 39px;
@@ -441,15 +662,11 @@ section article.article{
   position: relative;
   z-index: 4;
 }
+*/
 
-.headerItem {
-  display: inline-block;
-}
 
-#logo .headerItem {
-   display: inline-block;
-}
 
+/*
 header div{
    display: inline-block;
    width: 50%;
@@ -468,7 +685,7 @@ h1.paragraphNameLeft{
   position: absolute;
   left: -35px;
   width: 200px;
-  text-align: center;  
+  text-align: center;
   transform: rotate(-90deg);
 }
 
@@ -484,7 +701,7 @@ h1.paragraphNameRight{
   right: -50px;
   top: 10px;
   width: 200px;
-  text-align: center;  
+  text-align: center;
   transform: rotate(90deg);
 }
 
@@ -499,7 +716,7 @@ h1.paragraphNameRight{
 }
 
 .left:hover{
-  left: 0%;  
+  left: 0%;
 }
 
 .right{
@@ -515,7 +732,7 @@ h1.paragraphNameRight{
 }
 
 .right:hover{
-  right: 0%;  
+  right: 0%;
 }
 
 h1 img{
@@ -549,11 +766,11 @@ h1 .paragraphName.image{
 
 @media screen and (max-width: 450px){
 
-#welcomePage{
+/*#welcomePage{
     background-image: url(../img/routard3.JPG);
     background-color: black;
     /*background-size: 113%;*/
-  }
+  /*}
 
 #cross img{
   height: 20px;
@@ -563,16 +780,16 @@ h1 .paragraphName.image{
   display: block;
 }
 
-  #wrapper{
-  width: 100vw;
-  }
+#wrapper{
+width: 100vw;
+}
 
   .home{
     width: auto;
     margin: 0px auto;
     border-radius: 0px;
     padding: 5px;
-  
+
   }
 
   .right{
@@ -584,7 +801,7 @@ h1 .paragraphName.image{
     display: none;
   }*/
 
-  #welcomeCenter {
+  /*#welcomeCenter {
     width: 60%;
   }
 
@@ -605,35 +822,11 @@ h1 .paragraphName.image{
     height: 41vh;
 }
 
- /*#menu {
-    display:none;
-  }*/
-  
   .slicknav_menu {
     display:block;
   }
 
-/*
-#menu{
-  display: none;
-
-}
-
-#menu .slicknav_menu {
-  display: block;
-  z-index: 10;
-}
-.js #menu {
-    display:none;
-  }
-  
-  .js .slicknav_menu {
-    display:block;
-  }
-
-*****************/
-
-.right{ 
+.right{
   right: 0vw;
   margin: 0 auto;
   width: auto;
@@ -646,7 +839,7 @@ h1 .paragraphName.image{
 }
 
 h1.paragraphNameLeft{
- 
+
   position: relative;
   left: 0px;
   transform: rotate(0deg);
@@ -658,7 +851,7 @@ h1.paragraphNameLeft{
   background: rgba(20,55,113,0.8);
 }
 
-h1.paragraphNameRight{  
+h1.paragraphNameRight{
   position: relative;
   right: 0px;
   transform: rotate(0deg);
@@ -678,10 +871,6 @@ h1.paragraphNameRight{
   padding-right: 0px;
 }
 
-#welcomePage{    
+#welcomePage{
     height: 800px;
-    }
-
-
-
-}
+    }*/
