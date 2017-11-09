@@ -1509,6 +1509,10 @@ CROSS
     font-size: 0.99em;
   }
 
+  .introduction h2{
+    font-size: 1.8em;
+  }
+
   .introduction p {
   width: 80vw;
   column-count: 1;
