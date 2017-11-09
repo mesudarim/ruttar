@@ -209,7 +209,7 @@ $(window).on("scroll", function(){
     console.log(scrollTop)
     var limit = scrollTop + $(window).height();
 
-    if(scrollTop > 1640 && $(window).scrollTop() < 1660){
+    if(scrollTop > 1640 && $(window).scrollTop() < 1800){
       if(showingSeed == false){
         var text = $('#seed').data('text');
         showingSeed = true;
@@ -230,7 +230,7 @@ $(window).on("scroll", function(){
       }
     }
 
-    if(scrollTop > 2920 && $(window).scrollTop() < 3000){
+    if(scrollTop > 2920 && $(window).scrollTop() < 3300){
       if(showingTeam == false){
         var text = $('#team').data('text');
         showingTeam = true;
@@ -282,104 +282,3 @@ document.getElementById("sendButton").addEventListener("click", function(){
 });
 
 new WOW().init();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // var pos = $(".printerTwo").width();
-    // var windowWidth = $(window ).width();
-    // if(pos == windowWidth){
-    //   setTimeout(function(){
-    //     $(".printerTwo").css({width: 0})
-    //     $(".printerTwo").css({opacity: 0})
-    //     $(".printerOne").css({width: windowWidth})
-    //     $(".printerOne").css({opacity: 1})
-        // $(".printerOne").addClass("hide")
-        // $(".printerOne").css({width: windowWidth})
-
-        // setTimeout(function(){
-        //   $(".printerOne").css({width: windowWidth})
-        //   $(".printerOne").removeClass("hide")
-        //
-        // }, 200)
-    //   }, 200)
-    //
-    // }
-    // else{
-    //   setTimeout(function(){
-    //       $(".printerTwo").css({opacity: 1})
-    //     $(".printerTwo").css({width: windowWidth})
-    //     $(".printerOne").css({width: 0})
-    //     $(".printerOne").css({opacity: 0})
-        // $(".printerTwo").addClass("hide")
-        //
-        // // $(".printerOne").css({width: windowWidth})
-        //
-        // setTimeout(function(){
-        //   $(".printerTwo").css({width: windowWidth})
-        //   $(".printerTwo").removeClass("hide")
-        //
-        // },200)
-//       }, 200)
-//
-//
-//
-//
-//
-//
-//     var windowWidht = $(window ).width()/3;
-//
-
-//
-//     var randomValueGreen = Math.floor(Math.random() * windowWidht);
-//
-//     var randomValueblack = Math.floor(Math.random() * windowWidht);
-//     var randomValueblack2 = Math.floor(windowWidht*2 + (Math.random() * windowWidht));
-//     var randomValueblack3 = Math.floor(windowWidht + (Math.random() * windowWidht));
-//
-//     var randomValueBrown = Math.floor(Math.random() * windowWidht);
-//     var randomValueBrown2 = Math.floor(Math.random() * windowWidht);
-//     var randomValueBrown3 = Math.floor(windowWidht + (Math.random() * windowWidht));
-//     var randomValueBrown4 = Math.floor(windowWidht + (Math.random() * windowWidht));
-//     var randomValueBrown5 = Math.floor(windowWidht*2 + (Math.random() * windowWidht));
-//     var randomValueBrown6 = Math.floor(windowWidht*2 + (Math.random() * windowWidht));
-//
-//     var randomValueRed = Math.floor(Math.random() * windowWidht);
-//     var randomValueRed2 = Math.floor(windowWidht + (Math.random() * windowWidht));
-//     var randomValueRed3 = Math.floor(windowWidht*2 + (Math.random() * windowWidht));
-//
-//     $(".red").css({left: randomValueRed});
-//     $(".red2").css({left: randomValueRed2});
-//     $(".red3").css({left: randomValueRed3});
-//
-//     $(".green").css({left: randomValueGreen});
-//
-//     $(".black").css({left: randomValueblack});
-//     $(".black2").css({left: randomValueblack2});
-//     $(".black3").css({left: randomValueblack3});
-//
-//     $(".brun").css({left: randomValueBrown});
-//     $(".brun2").css({left: randomValueBrown2});
-//     $(".brun3").css({left: randomValueBrown3});
-//     $(".brun4").css({left: randomValueBrown4});
-//     $(".brun5").css({left: randomValueBrown5});
-//     $(".brun6").css({left: randomValueBrown6});
-// })
