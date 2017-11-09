@@ -1,143 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr-FR">
 	<head>
+		<meta charset="UTF-8"/>
 		<title>ruttar - web designer</title>
 
 		<link href="src/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="src/css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="src/css/animate.css">
 
 
 		<!-- Fichiers Javascript et jquery/jqueryUI -->
 		<script type="text/javascript" src="app/jquery-ui/external/jquery/jquery.js"></script>
 		<script type="text/javascript" src="app/jquery-ui/jquery-ui.js"></script>
-
+		<script src="app/javascript/wow.min.js"></script>
 		<link href="app/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
 		<link href="app/jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
 		<link href="app/jquery-ui/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="app/javascript/slicknav/jquery.slicknav.js"></script>
 		<link href="app/javascript/slicknav/slicknav.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Dosis|Questrial|Raleway:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa%7cDosis%7cQuestrial%7cAllura" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100%7cRaleway:300%7cRaleway:500%7cRaleway:700" rel="stylesheet">
 	</head>
 
 	<body class="overFlowHidden">
+			<header>
+				<div id="menuLines" class="hide">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="headerLogo">
+					<a href="#sectionHome"><span>Ruttar</span></a>
+				</div>
+			</header>
+
+
+			<div class="menu">
+						<nav>
+							<!-- role="navigation" -->
+							<ul id="menu" class="headerItem">
+								<li ><a href="#sectionHome" id="homeMenu">Home</a></li>
+								<li ><a href="#about" id="aboutMenu">Entre nous</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#contactForm">Contact</a></li>
+							</ul>
+						</nav>
+			</div>
+
+			<section id="sectionHome">
+				<div class="welcome" id="home">
+
+					<div class="rectangleRuttar zeropx">
+					</div>
+
+					<div class="rectangleWD zeropx">
+					</div>
+
+					<div class="rectangleMenu farRight">
+						<div class="menuDiv"></div>
+						<div class="menuDiv"></div>
+						<div class="menuDiv"></div>
+					</div>
+
+					<div class="logo hide">
+						<h1>Ruttar</h1>
+						<span class="webDesigner hide">WEB Designer</span>
+					</div>
+					<a href="#about">
+						<div class="downArrow fade">
+								<div class="leftSideArrow">
+								</div>
+								<div class="rightSideArrow">
+								</div>
+						</div>
+					</a>
+				</div>
+			</section>
+
+
 		<div id="wrapper">
-			<!-- <div class="mainPage"> -->
-				<div class="welcomeLeft">
-					<header>
-							<nav role="navigation">
-								<ul id="menu" class="headerItem">
-									<li ><a href="#about" id="aboutMenu">A propos test</a></li>
-									<li><a href="#portfolio">Portfolio</a></li>
-									<li id="contact">Contact</li>
-								</ul>
-							</nav>
-					</header>
-					<div id="arrowUp" class="hide">
-						<img src="src/img/arrowUp.png" class="arrowUpImg">
-					</div>
-				</div>
-
-				<div class="welcomeRight">
-				</div>
-
-				<div class="logoRight">
-					<img src="src/img/rightRuttr.png" class="welcomeImg">
-					<span class="webDesigner">WEB Designer</span>
-					<div class="logoLeft">
-						<img src="src/img/leftRuttar.png" class="welcomeImg">
-					</div>
-					<div class="arrowDown">
-						<a href="#about"><img src="src/img/arrowDown.png" class="arrowDownImg"></a>
-					</div>
-				</div>
 
 				<section id="sectionAbout">
+
 					<article id="about">
-
-							<div class="leftAbout">
-								<h3>A PROPOS</h3>
-								<h2>RAPHAEL RUTA</h2>
-									<h1 id="webdesigner"><span class="bold">WEB</span> Designer</h1>
-
-									<!-- <p class="competance">Mes compétances</p> -->
-
-									<p class="title1"><strong>WEB DESIGN:</strong></p>
-
-									<p class="title2"><strong>Création de site internet</strong></p>
-						    	<ul>
-										<li>Concept</li>
-										<li>Ergonomie</li>
-										<li>Charte graphique</li>
-										<li>Réalisation</li>
-						    	</ul>
-
-									<p class="title1"><strong>WEB DEVELOPPMENT:</strong></p>
-
-									<p class="title2"><strong>Création d'application web</strong></p>
-						    	<ul>
-										<li>Analyse des besoins</li>
-										<li>Concéption de l'application</li>
-										<li>Ergonomie</li>
-										<li>Charte graphique</li>
-						    	</ul>
+							<div class="leftAbout wow fadeInUp">
+								<h2>En quelques mots</h2>
 							</div>
-							<div class="rightAbout">
-								<img src="./src/img/halfStones.jpg" alt="">
+							<div class="rightAbout wow fadeInUp" data-wow-delay="300ms">
+								<p class="wow fadeInUp">Inspirés par la nature, nous sommes à la recherche de l'harmonie, à l'écoute des besoins, attentifs aux tendances et réactifs aux changements. </p>
 							</div>
 							<div class="clear">
+							</div>
+							<div class="about ">
+								<h2><span>DE VOUS A NOUS.</span></h2>
+
+							</div>
+							<div class="divUnderAbout">
+
+								<div class="underAbout wow fadeInUp" id="ecoute">
+									<figure>
+										<img src="./src/img/crayonLight.jpg" alt="" class="imgUnderAbout">
+										<figcaption>Conception</figcaption>
+									</figure>
+									<div class="comment" >
+										<p>Ensemble, nous analysons les besoins, trouvons les solutions les plus adaptées et définissons les grandes lignes du projet.</p>
+									</div>
+								</div>
+
+								<div class="underAbout wow fadeInUp" data-wow-delay="300ms" id="planification">
+									<figure>
+										<img src="./src/img/mesureToolsLight.jpg" alt="" class="imgUnderAbout">
+										<figcaption>Planification</figcaption>
+									</figure>
+									<div class="comment" >
+										<p>Une fois le concept trouvé, le processus est lancé par la modélisation graphique du site ou de l'application et nous nous accordons sur un calendrier. </p>
+									</div>
+								</div>
+
+								<div class="underAbout wow fadeInUp" data-wow-delay="600ms" id="realisation">
+									<figure>
+										<img src="./src/img/tools2Light.jpg" alt="" class="imgUnderAbout">
+										<figcaption>Réalisation</figcaption>
+									</figure>s
+									<div class="comment" >
+										<p>À l'aide des dernières technologies web, nous nous lançons dans la programmation afin de réaliser ce que nous avons défini ensemble ultérieurement. </p>
+									</div>
+								</div>
+
+							</div>
+							<div class="clear">
+							</div>
+							<div >
+								<h3 id="seed" class="sentence" data-text="Il suffit d'une première graine..."></h3>
+							</div>
+					</article>
+
+					<div class="cover full-width">
+					</div>
+
+				</section>
+
+				<section id="sectionServices">
+
+					<article id="services">
+							<!-- <div class="full-width empty">
+							</div> -->
+							<div class="about full-width">
+								<h2>SERVICES.</h2>
+							</div>
+							<div class="divUnderAbout">
+								<a href="webDesignPage.html">
+								<div class="underAbout " id="webDesign">
+									<span>WEB DESIGN</span>
+								</div>
+								</a>
+								<div class="greenDiv"></div>
+								<a href="webAppPage.html">
+								<div class="underAbout " id="webApp">
+									<span>WEB APP</span>
+								</div>
+								</a>
+							</div>
+							<div class="clear">
+							</div>
+							<div >
+								<h3 id="team" class="sentence" data-text="...et d'une équipe enthousiaste!"></h3>
 							</div>
 
 					</article>
-				</section>
-
-				<section id="sectionPortfolio">
-					<h3>PORTFOLIO - Quleques exemples</h3>
-					<article id="portfolio" class="article">
-							<div class="left paragraphe">
-								<p class="title1"><strong><span class="bold">WEB</span> DESIGN</strong></p>
-								<p class="bold">Un site:</p>
-								<p class="bold link"><a href="http://www.apneaclubgeneve.ch/">apneaclubgeneve.ch</a><br><br></p>
-								<p class="bold">Un concept:</p>
-								<p>Le site en question est celui du club d'Apnée de Genève, et en apnée, on recherche la profondeur. C'est là que le site vous emènera! </p>
-								<p>Retenez votre souffle et voir!  </p>
-							</div>
-
-							<div class="right image">
-								<a href="http://www.apneaclubgeneve.ch/"><img src="./src/img/apnea.jpg"></a>
-							</div>
-							<div class="clear">
-							</div>
-						</article>
-						<article id="webapp" class="article">
-							<div class="left renaud">
-								<img src="./src/img/renaudagogo.png">
-							</div>
-							<div class="left" id="portWebApp">
-								<p class="title1"><strong><span class="bold">WEB</span> APPLICATION</strong></p>
-								<p class="bold">Un artiste sur scène - 50 reprises de Renaud - une application web</p>
-								<p>C'est le public, qui depuis son téléphone portable, après avoir répondu à un quiz sur la vie de Renaud, choisi en direct les chansons qu'il veut écouter! L'artiste sur scène reçoit les demandes du public sur sa tablette.</p>
-								<p class="bold">Du sur mesure</p>
-								<p>L'artiste peut du côté admin, à sa guise, changer, ajouter ou effacer autant les questions du quiz que les chansons proposées, par contre c'est lui qui les chante dans les tous les cas!</p>
-								<!-- <p>Le fonctionnement de l'application est expliquée ici.</p> -->
-							</div>
-
-							<div class="clear">
-							</div>
+						<div class="fullscreen-bg full-width hide">
+							<video playsinline loop muted autoplay class="fullscreen-bg__video ">
+									<source src="./src/img/fourmis5.webm" type="video/webm">
+									<source src="./src/img/fourmis5.mp4" type="video/mp4">
+									<source src="./src/img/fourmis5.ogg" type="video/ogg">
+							</video>
+						</div>
 				</section>
 
 				<section id="contactForm">
-					<div>
-					<div id="cross">
-						<img src="src/img/cross3.png">
+					<div id="map" class="full-width">
 					</div>
-						<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
-							<input type="text" name="nom" placeholder="Votre Nom"><br>
-							<input type="email" name="email" placeholder="Votre adresse email"><br>
-							<input class="inputText" type="textarea" rows="10" cols="30" placeholder="Laissez nous un petit message"><br>
-							<input type="submit" name="Envoyer">
-						</form>
+					<div class="empty2 wow fadeInUp" id="contact">
+							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
+								<input type="text" name="nom" placeholder="Votre Nom"><br>
+								<input type="email" name="email" placeholder="Votre adresse email"><br>
+								<textarea class="inputText" rows="10" cols="5" placeholder="Laissez nous un petit message"></textarea><br>
+								<input type="submit" name="Envoyer" value="ENVOYER" id="sendButton">
+							</form>
 					</div>
+					<script>
+						function initMap() {
+							var uluru = {lat: 46.209642, lng: 6.120710};
+							var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 16,
+								center: uluru,
+								styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+							});
+							var marker = new google.maps.Marker({
+								position: uluru,
+								map: map
+							});
+						}
+					</script>
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv2i8Das8W3j2xw5cj7VN7-dcJJVekbiY&callback=initMap"></script>
 				</section>
 
 
@@ -151,142 +296,35 @@
 
 
 
-<!--
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>ruttar - web solutions</title>
-
-		<link href="src/css/reset.css" rel="stylesheet" type="text/css" />
-		<link href="src/css/style.css" rel="stylesheet" type="text/css" />
-
-
-		<!-- Fichiers Javascript et jquery/jqueryUI -->
-		<!-- <script type="text/javascript" src="app/jquery-ui/external/jquery/jquery.js"></script>
-		<script type="text/javascript" src="app/jquery-ui/jquery-ui.js"></script>
-
-		<link href="app/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
-		<link href="app/jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
-		<link href="app/jquery-ui/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="app/javascript/slicknav/jquery.slicknav.js"></script>
-		<link href="app/javascript/slicknav/slicknav.css" rel="stylesheet" type="text/css">
-	</head>
-
-	<body class="overFlowHidden">
-		<div id="wrapper">
-			<header>
-					<nav role="navigation">
-						<div id="logo" class="headerItem">
-							<a href="C:/Users/Rafa/Desktop/ruttar/onepage/dev/www/index.html"><img src="src/img/logo.png"></a>
-						</div>
-						<ul id="menu" class="headerItem">					 -->
-							<!--<li><a href="#home">accueil</a></li>
-							<li><a href="#services">services</a></li>
-							<li><a href="#porfolio">portfolio</a></li>-->
-							<!-- <li id="contact">contact</li>
-						</ul> -->
-						<!--<ul id="menu" class="">
-							<li><a href="#home">accueil</a></li>
-							<li><a href="#services">services</a></li>
-							<li><a href="#porfolio">portfolio</a></li>
-							<li id="contact">contact</li>-->
-						<!-- </ul>
-					</nav>
-			</header>
-
-			<section id="welcomeSection">
-				<div id="welcomePage" class="absolute"></div><!--<img src="../src/img/routard.JPG" alt="Image d'un couché de soleil avec un profil de routard (d'ou ruttar.ch) dessiné par les nuages.">-->
-				<!-- <div id="welcomeLeft" class="ruttar"><img src="src/img/ruttarLeft.png"><br><br>web so</div>
-				<div id="welcomeRight" class="ruttar"><img src="src/img/ruttarRight.png"><br><br>lutions</div>
-				<div id="welcomeCenter" class="topMargin">
-					<button id="start">C'est parti!</button>
-				</div>
-			</section>
-			<section id="contactForm">
-				<div>
-				<div id="cross">
-					<img src="src/img/cross3.png">
-				</div>
-					<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
-						<input type="text" name="nom" placeholder="Votre Nom"><br>
-						<input type="email" name="email" placeholder="Votre adresse email"><br>
-						<input class="inputText" type="textarea" rows="10" cols="30" placeholder="Laissez nous un petit message"><br>
-						<input type="submit" name="Envoyer">
-					</form>
-				</div>
-			</section>
-			<section id="firstSection">
-				<article id="home">
-					<h1>Ce site est encore en construction, mais vous pouvez déjà nous contacter!</h1> -->
-					<!--<p class="citation">"Mais ma route m'entraîne toujours, désir de concrétiser un symbole, de posséder l'unique beauté que l'on nomme: liberté "</p>
-					<p class="author">Michel Corringe</p>
-
-					<div class="left">
-						<h1 class="paragraphNameLeft">Concept</h1>
-
-			       		<p>Conceptualiser correctement un site internet est un des points forts de <strong>ruttar.ch</strong>. Les idées qui feront naitre le site, seront celles qui définirons s’il s'agit d'un de plus parmi les autres, ou celui qui va sortir du lot, celui sur lequel le visiteur reviendra.</p>
-			       	</div>
-
-					<div class="right">
-						<h1 class="paragraphNameRight">Réalisation</h1>
-						<p>Rien n'est laissé au hasard. L'expérience utilisateur doit procurer au visiteur une sensation de bien être, autant dans la facilité de navigation que dans l'esthétique visuelle. L'harmonie doit être omniprésente et l'utilisation intuitive.</p>
-
-					</div>
-					<div class="left">
-						<h1 class="paragraphNameLeft">Sur mesure</h1>
-						<p>La création d'un site ou d'une application est un long chemin qui est fait de plusieurs étapes. Toujours à l'écoute, nous serons à vos côtés tout au long de l'aventure. Notre équipe adapte la création du site à vos besoin et à votre sensibilité tout en apportant nos conseils de profesionnels.</p>
-					</div>
-
-				</article>
-			</section>
-
-			<section id="sectionServices">
-				<div class="cover"></div>
-				<article id="services" class="article">
-					<p class="citation">""Le voyage pour moi, ce n'est pas arriver, c'est partir. C'est l'imprévu de la prochaine escale, c'est le désir jamais comblé de connaître sans cesse autre chose, c'est demain, éternellement demain." "</p>
-					<p class="author">Roland Dorgelès</p>
-
-					<div class="left">
-						<h1 class="paragraphNameLeft">Sites</h1>
-			       		<p>Conséptualiser correctement un site internet est un des points forts de <strong>ruttar.ch</strong>.
-						Le site ou l'application doivent faire un tout. Du nom de domain, en passant par les couleurs, des images au contenu, tout doit s'alier pour faire du nouveau site, non pas un de plus parmi tant d'autres, mais celui qui va sortir du lot, celui sur lequel le visiteur aimera revenir.</p>
-			       	</div>
-
-					<div class="right">
-						<p>Rien n'est laissé au hasard. La réalisation doit procuré au visiteur autant une facilité de navigation qu'une sensation agréable.</p>
-						<h1 class="paragraphNameRight">Applications</h1>
-					</div>
-
-				</article>
-			</section>
-			<section id="sectionPortfolio">
-				<div class="cover"></div>
-				<article id="porfolio" class="article">
-					<p class="citation">"...on arrive, on repart, on n'est jamais bien nulle part "</p>
-				<p class="author">Le Chinois</p>
-				<div class="title left">
-						<h1><span class="paragraphNameRight image"><img src="../src/img/apnea.png"></span></h1>
-					</div>
-			       	<div class="left">
-			       		<p>Conséptualiser correctement un site internet est un des points forts de <strong>ruttar.ch</strong>.
-						Le site ou l'application doivent faire un tout. Du nom de domain, en passant par les couleurs, des images au contenu, tout doit s'alier pour faire du nouveau site, non pas un de plus parmi tant d'autres, mais celui qui va sortir du lot, celui sur lequel le visiteur aimera revenir.</p>
-			       	</div>
-
-					<div class="right">
-						<p>Rien n'est laissé au hasard. La réalisation doit procuré au visiteur autant une facilité de navigation qu'une sensation agréable.</p>
-					</div>
-					<div class="title right">
-						<h1><span class="paragraphNameRight image">Applications</span></h1>
-					</div>	-->
-
-				<!-- </article>
-			</section>
 
 
 
-			<script src="app/javascript/myCode.js"></script>
-			<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-		</div>
-	</body>
-</html> -->
+<!-- <p>Avec assez de volonté, nous pouvons réaliser l'impossible...</p> -->
+<!-- <p>“Toute chose qui est, si elle n'était, serait énormément improbable.” <br><br><span>Paul Valéry</span></p> -->
+<!-- <p>“Lorsque vous avez éliminé l’impossible, ce qui reste, si improbable soit-il, est nécessairement la vérité.” Arthur Conan Doyle</p> -->
+
+<!-- <div class="printing full-width">
+	<div class="red print"></div>
+	<div class="red2 print"></div>
+	<div class="red3 print"></div>
+	<div class="green print"></div>
+	<div class="black print"></div>
+	<div class="black2 print"></div>
+	<div class="black3 print"></div>
+	<div class="brun print"></div>
+	<div class="brun2 print"></div>
+	<div class="brun3 print"></div>
+	<div class="brun4 print"></div>
+	<div class="brun5 print"></div>
+	<div class="brun6 print"></div>
+</div> -->
+
+<!-- <canvas id="canvas" class="full-width" height="30" >canvas</canvas> -->
+
+
+
+
+<!-- <div class="printer">
+	<div class="printerOne"></div>
+	<div class="printerTwo"></div>
+</div> -->
