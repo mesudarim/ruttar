@@ -1551,7 +1551,7 @@ CROSS
   }
 
   .picWebApp:nth-child(1) {
-    left: -81%;
+    left: -100%;
     width: 417px;
 }
 
