@@ -83,6 +83,7 @@ function toggleWebApp(){
 
 $(".nav a, nav a").on("click", function(e){        //1
     toggleClass();
+    $("body").removeClass("overFlowHidden")
     e.preventDefault();
     var id = $(this).attr("href");
                  //2
@@ -111,6 +112,7 @@ $(".nav a, nav a").on("click", function(e){        //1
 
 $("header div a").on("click", function(e){        //1
     e.preventDefault();
+
     $("html, body").animate({                       //4
             scrollTop : 0
       }, {
