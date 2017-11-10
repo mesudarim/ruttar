@@ -3,32 +3,39 @@
 /////////////////////////////////
 
 $(window).on("load", function(){
-  $(".welcome").addClass("noBlur");
+  if($(window).width() > 450){
+    $(".welcome").addClass("noBlur");
 
-   setTimeout(function(){
-        $(".welcome").addClass("color");
-        $(".rectangleRuttar, .rectangleWD ").removeClass("zeropx");
-        setTimeout(function(){
-          $(".rectangleRuttar, .rectangleWD").addClass("zeropx");
-        }, 1300)
-    }, 1500);
+     setTimeout(function(){
+          $(".welcome").addClass("color");
+          $(".rectangleRuttar, .rectangleWD ").removeClass("zeropx");
+            setTimeout(function(){
+              $(".rectangleRuttar, .rectangleWD").addClass("zeropx");
+            }, 1300)
+      }, 1500);
 
   setTimeout(function(){
       $(".downArrow").removeClass("fade");
       $(".downArrow").addClass("unfade");
   }, 3500);
 
-  setTimeout(function(){
-    $(".rectangleMenu").removeClass("farRight");
- }, 3200);
+ //  setTimeout(function(){
+ //    $(".rectangleMenu").removeClass("farRight");
+ // }, 3200);
 
   setTimeout(function(){
-    $(".logo, .webDesigner, .arrowDown").removeClass("hide");
+    $(".logo, .webDesigner, .arrowDown, #menuLines").removeClass("hide");
   }, 3100)
 
-  setTimeout(function(){
-    $("#menuLines").removeClass("hide");
-  }, 4500)
+  }
+  else{
+      $(".logo, .webDesigner, #menuLines").removeClass("hide");
+      $(".downArrow").addClass("unfade");
+  }
+
+  // setTimeout(function(){
+  //   $("#menuLines").removeClass("hide");
+  // }, 4500)
 
 })
 
@@ -277,8 +284,11 @@ $(window).on("scroll", function(){
 })
 
 document.getElementById("sendButton").addEventListener("click", function(){
+  setTimeout(function () {
     $("#contact").addClass("thanks")
     document.getElementById("contact").innerHTML = "Merci pour votre message, nous vous contacterons dans les plus brefs délais. ";
+  }, 1500);
+
 });
 
 new WOW().init();

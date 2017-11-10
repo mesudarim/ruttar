@@ -1419,9 +1419,14 @@ CROSS
     margin-left: calc(50% - 234px);
 }
 
+  #webAppPage .title {
+      margin-left: calc(50% - 177px);
+  }
+
 #webDesignPage .title h1, #webAppPage .title h1 {
     font-size: 80px;
   }
+
 
 }
 
@@ -1504,6 +1509,13 @@ CROSS
 }
 
 @media screen and (max-width: 450px){
+  .welcome{
+    filter: none;
+  }
+
+  .thanks{
+    font-size: 27px
+  }
 
   p {
     font-size: 0.99em;
@@ -1553,15 +1565,16 @@ CROSS
   .picWebApp:nth-child(1) {
     left: -100%;
     width: 417px;
-}
+  }
 
-.coverTitle {
-    height: 55px;
-}
+  .coverTitle {
+      height: 55px;
+  }
 
-    #webApp{
-      right: -2px;
-    }
+  #webApp{
+    right: -2px;
+    top: -164px;
+  }
 
   #webAppPage .title {
     top: 8vh;
