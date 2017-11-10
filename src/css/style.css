@@ -555,7 +555,7 @@ p span{
 
 .comment{
   position: absolute;
-  background-color: rgb(244, 120, 38);
+  background-color: rgb(29, 32, 47);
   transition: 300ms;
   top: 0px;
   height: 282px;
@@ -1175,6 +1175,7 @@ textarea{
    max-height: 348px;
    font-size: 38px;
    line-height: 47px;
+   font-weight: 300;
  }
 
 /*//////////////////////////////////////
@@ -1312,7 +1313,6 @@ CROSS
 .show{
   z-index: 10;
   width: 100%;
-  border: solid 1px #fff;
 }
 
 .showPadding{
