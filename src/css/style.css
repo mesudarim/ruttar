@@ -1322,6 +1322,34 @@ CROSS
   text-align: left;
 }
 
+footer{
+  display: none;
+  position: relative;
+  background-color: rgb(29, 32, 47);
+  color: white;
+  bottom: -670px;
+  z-index: 10;
+  display: flex;
+  font-weight: 300px;
+}
+
+footer p{
+  width: 50%;
+  padding-top: 30px;
+  text-align: center;
+
+}
+
+footer p:last-child{
+  width: 50%;
+  padding-top: 30px;
+  text-align: right;
+}
+
+footer p span{
+  position: relative;
+}
+
 @media screen and (max-width: 1024px){
   .underContainer {
       width: 800px;
@@ -1665,4 +1693,5 @@ CROSS
   #webDesign {
     left: 2px;
   }
+
 }

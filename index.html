@@ -2,8 +2,8 @@
 <html lang="fr-FR">
 	<head>
 		<meta charset="UTF-8"/>
-		<title>ruttar - web designer</title>
-
+		<title>ruttar - Solutions pour le web</title>
+		<meta name="description" content="Création de site internet et d'applications web">
 		<link href="src/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="src/css/style.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="src/css/animate.css">
@@ -64,7 +64,7 @@
 					</div> -->
 
 					<div class="logo hide">
-						<h1>Ruttar</h1>
+						<h1 itemprop="name">Ruttar</h1>
 						<span class="webDesigner hide">WEB Designer</span>
 					</div>
 					<a href="#about">
@@ -100,31 +100,31 @@
 
 								<div class="underAbout wow fadeInUp" id="ecoute">
 									<figure>
-										<img src="./src/img/crayonLight.jpg" alt="" class="imgUnderAbout">
+										<img src="./src/img/crayonLight.jpg" alt="Cahier sur lequel est posé un crayon, une gomme et un taille-crayon représentant le stade de conception d'un site web ou d'une application web" class="imgUnderAbout">
 										<figcaption>Conception</figcaption>
 									</figure>
 									<div class="comment" >
-										<p>Ensemble, nous analysons les besoins, trouvons les solutions les plus adaptées et définissons les grandes lignes du projet.</p>
+										<p>Ensemble, nous analysons les besoins, mettons en place le concept et définissons les grandes lignes du projet.</p>
 									</div>
 								</div>
 
 								<div class="underAbout wow fadeInUp" data-wow-delay="300ms" id="planification">
 									<figure>
-										<img src="./src/img/mesureToolsLight.jpg" alt="" class="imgUnderAbout">
+										<img src="./src/img/mesureToolsLight.jpg" alt="Règle et mètre à mesurer représentant le stade de planification d'un site web ou d'une application web" class="imgUnderAbout">
 										<figcaption>Planification</figcaption>
 									</figure>
 									<div class="comment" >
-										<p>Une fois le concept trouvé, le processus est lancé par la modélisation graphique du site ou de l'application et nous nous accordons sur un calendrier. </p>
+										<p>La charte graphique du site ou de l'application est mise en place, le projet est planifié jusqu'au plus petits détails.</p>
 									</div>
 								</div>
 
 								<div class="underAbout wow fadeInUp" data-wow-delay="600ms" id="realisation">
 									<figure>
-										<img src="./src/img/tools2Light.jpg" alt="" class="imgUnderAbout">
+										<img src="./src/img/tools2Light.jpg" alt="Plusieurs outils dont pince et marteau représentants le stade de réalisation d'un site web ou d'une application web" class="imgUnderAbout">
 										<figcaption>Réalisation</figcaption>
 									</figure>s
 									<div class="comment" >
-										<p>À l'aide des dernières technologies web, nous nous lançons dans la programmation afin de réaliser ce que nous avons défini ensemble ultérieurement. </p>
+										<p>À l'aide des dernières technologies du web, nous nous lançons dans la programmation afin de réaliser ce que nous avons défini ensemble ultérieurement. </p>
 									</div>
 								</div>
 
@@ -199,9 +199,9 @@
 					</div> -->
 					<script>
 						function initMap() {
-							var uluru = {lat: 46.209642, lng: 6.120710};
+							var uluru = {lat: 46.191282 , lng: 6.154799};
 							var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 16,
+								zoom: 13,
 								center: uluru,
 								styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -292,7 +292,10 @@
 					</script>
 					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv2i8Das8W3j2xw5cj7VN7-dcJJVekbiY&callback=initMap"></script>
 				</section>
-
+				<!-- <footer class="full-width">
+				  <p>Merci de votre visite! </p>
+				  <p itemscope itemtype="http://schema.org/address"><span itemprop="streetAddress" content="Avenue de Miremont 9">Avenue de Miremont 9</span>, <span itemprop="postalCode" content="1206">1206 </span><span itemprop="addressLocality" content="Geneva">Genève</span></p>
+				</footer> -->
 
 
 				<script src="app/javascript/myCode.js"></script>

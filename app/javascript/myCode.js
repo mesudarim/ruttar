@@ -2,7 +2,7 @@
 /////WELCOME page
 /////////////////////////////////
 
-$(window).on("load", function(){
+$(document).ready(function(){
   if($(window).width() > 450){
     $(".welcome").addClass("noBlur");
 
@@ -14,19 +14,18 @@ $(window).on("load", function(){
             }, 1300)
       }, 1500);
 
-  setTimeout(function(){
-      $(".downArrow").removeClass("fade");
-      $(".downArrow").addClass("unfade");
-  }, 3500);
+    setTimeout(function(){
+        $(".downArrow").removeClass("fade");
+        $(".downArrow").addClass("unfade");
+    }, 3500);
 
  //  setTimeout(function(){
  //    $(".rectangleMenu").removeClass("farRight");
  // }, 3200);
 
-  setTimeout(function(){
-    $(".logo, .webDesigner, .arrowDown, #menuLines").removeClass("hide");
-  }, 3100)
-
+    setTimeout(function(){
+      $(".logo, .webDesigner, .arrowDown, #menuLines").removeClass("hide");
+    }, 3100)
   }
   else{
       $(".logo, .webDesigner, #menuLines").removeClass("hide");
