@@ -591,9 +591,10 @@ p span{
   z-index: 1;
   color: #fff;
   padding-left: 30px;
+  font-size: 3.0vw;
 }
 
-div h3 {
+div .sentence {
   padding-top: 10px;
   font-family: monospace;
   /*overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -648,6 +649,12 @@ div h3 {
   padding: 0;
   padding-top: 110px;
   background-color: rgba(244, 120, 38, 0.8);
+}
+
+#services .underAbout h3{
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 #sectionServices .empty{
@@ -896,7 +903,7 @@ img.displayed {
   color: orange;
 }
 
-.container div h3 {
+.container div .sentence {
   padding-top: 10px;
   font-family: monospace;
   margin: 0 auto;
@@ -1081,7 +1088,7 @@ article {
   background: rgba(0,0,0,0.7);
   z-index: 6;
   position: absolute;
-  margin-top: 20px;
+  margin-top: -114px;
   right: 35px;
   width: 33%;
   min-width: 230px;
@@ -1160,7 +1167,7 @@ textarea{
 }
 
 #map {
-  height: 486px;
+  height: 617px;
   width: 100vw;
   /*left: -40px;*/
   top: 484px;
@@ -1323,31 +1330,28 @@ CROSS
 }
 
 footer{
-  display: none;
   position: relative;
-  background-color: rgb(29, 32, 47);
+  background-color: rgba(29, 32, 47, 0.7);
   color: white;
   bottom: -670px;
   z-index: 10;
-  display: flex;
   font-weight: 300px;
 }
 
 footer p{
-  width: 50%;
   padding-top: 30px;
   text-align: center;
-
 }
 
 footer p:last-child{
-  width: 50%;
-  padding-top: 30px;
-  text-align: right;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
 }
 
 footer p span{
   position: relative;
+  right: 0px;
 }
 
 @media screen and (max-width: 1024px){
@@ -1412,7 +1416,11 @@ footer p span{
   }
 
   .empty2 {
-    bottom: -411px;
+    bottom: -271px;
+  }
+
+  footer{
+    bottom: -438px;
   }
 
   #webDesign {
@@ -1424,7 +1432,7 @@ footer p span{
   #webApp {
     top: -406px;
     right: -169px;
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
   }
 
   .leftAbout {
@@ -1436,6 +1444,9 @@ footer p span{
     min-width: 172px;
     height: 101px;
     padding-top: 74px;
+  }
+
+  #services .underAbout h3{
     font-size: 23px;
   }
 
@@ -1541,6 +1552,15 @@ footer p span{
     filter: none;
   }
 
+  footer {
+    bottom: -812px;
+  }
+
+  .empty2 {
+    bottom: -307px;
+    width: 80%;
+  }
+
   .thanks{
     font-size: 27px
   }
@@ -1614,10 +1634,6 @@ footer p span{
       height: 621px;
   }
 
-  .empty2 {
-    width: 80%;
-  }
-
   .leftAbout {
     margin-top: 4em;
   }
@@ -1674,8 +1690,11 @@ footer p span{
     width: 65px;
     height: 73px;
     padding-top: 42px;
-    font-size: 17px;
     right: 0px;
+  }
+
+  #services .underAbout h3{
+    font-size: 17px;
   }
 
   .rightAbout p {

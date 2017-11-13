@@ -12,6 +12,17 @@
 		<!-- Fichiers Javascript et jquery/jqueryUI -->
 		<script type="text/javascript" src="app/jquery-ui/external/jquery/jquery.js"></script>
 		<script type="text/javascript" src="app/jquery-ui/jquery-ui.js"></script>
+		<!-- <script type="application/ld+json">
+			{
+			  "@context": "http://schema.org/WebPage",
+			  "url": "http://www.ruttar.ch",
+			  "name": "ruttar - Création site et application web",
+			  "WebPageElement": {
+			    "accountablePerson": "Raphael",
+			    "author": "Raphael"
+			  }
+			}
+		</script> -->
 		<script src="app/javascript/wow.min.js"></script>
 		<link href="app/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
 		<link href="app/jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
@@ -64,7 +75,7 @@
 					</div> -->
 
 					<div class="logo hide">
-						<h1 itemprop="name">Ruttar</h1>
+						<h1>Ruttar</h1>
 						<span class="webDesigner hide">WEB Designer</span>
 					</div>
 					<a href="#about">
@@ -132,7 +143,7 @@
 							<div class="clear">
 							</div>
 							<div >
-								<h3 id="seed" class="sentence" data-text="Il suffit d'une première graine..."></h3>
+								<div id="seed" class="sentence" data-text="Il suffit d'une première graine..."></div>
 							</div>
 					</article>
 
@@ -152,20 +163,20 @@
 							<div class="divUnderAbout">
 								<a href="webDesignPage.html">
 								<div class="underAbout " id="webDesign">
-									<span>WEB DESIGN</span>
+									<span><h3>WEB DESIGN</h3></span>
 								</div>
 								</a>
 								<div class="greenDiv"></div>
 								<a href="webAppPage.html">
 								<div class="underAbout " id="webApp">
-									<span>WEB APP</span>
+									<span><h3>WEB APP</h3></span>
 								</div>
 								</a>
 							</div>
 							<div class="clear">
 							</div>
 							<div >
-								<h3 id="team" class="sentence" data-text="...et d'une équipe enthousiaste!"></h3>
+								<div id="team" class="sentence" data-text="...et d'une équipe enthousiaste!"></div>
 							</div>
 
 					</article>
@@ -292,10 +303,10 @@
 					</script>
 					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv2i8Das8W3j2xw5cj7VN7-dcJJVekbiY&callback=initMap"></script>
 				</section>
-				<!-- <footer class="full-width">
-				  <p>Merci de votre visite! </p>
-				  <p itemscope itemtype="http://schema.org/address"><span itemprop="streetAddress" content="Avenue de Miremont 9">Avenue de Miremont 9</span>, <span itemprop="postalCode" content="1206">1206 </span><span itemprop="addressLocality" content="Geneva">Genève</span></p>
-				</footer> -->
+				<footer class="full-width">
+				  <p itemscope itemtype="http://schema.org/address"><span itemprop="streetAddress" content="Avenue de Miremont 9">Avenue de Miremont 9</span><br> <span itemprop="postalCode" content="1206">1206 </span><span itemprop="addressLocality" content="Geneva">Genève</span></p>
+					<p>Copyright © 2017 Ruttar, création de sites et applications web Genève</p>
+				</footer>
 
 
 				<script src="app/javascript/myCode.js"></script>
