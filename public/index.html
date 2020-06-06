@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>creappli - Solutions pour le web</title>
+  <meta name="description" content="Création de site internet et d'applications web">
+  <link href="./src/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="./src/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="src/css/animate.css">
+
+
+  <!-- Fichiers Javascript et jquery/jqueryUI -->
+  <script type="text/javascript" src="./app/jquery-ui/external/jquery/jquery.js"></script>
+  <script type="text/javascript" src="./app/jquery-ui/jquery-ui.js"></script>
+  <!-- <script type="application/ld+json">
+			{
+			  "@context": "http://schema.org/WebPage",
+			  "url": "http://www.ruttar.ch",
+			  "name": "ruttar - Création site et application web",
+			  "WebPageElement": {
+			    "accountablePerson": "Raphael",
+			    "author": "Raphael"
+			  }
+			}
+		</script> -->
+  <script src="./app/javascript/wow.min.js"></script>
+  <link href="./app/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="./app/jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
+  <link href="./app/jquery-ui/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./app/javascript/slicknav/jquery.slicknav.js"></script>
+  <link href="./app/javascript/slicknav/slicknav.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="overFlowHidden">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.15.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.15.0/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <header>
+    <div id="menuLines" class="hide">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="headerLogo">
+      <a href="#sectionHome"><span style="font-weight: 600; padding-right: 136px; letter-spacing: 8px">cre</span><span
+          style="font-weight: 100; letter-spacing: 8px">app</span></a>
+    </div>
+  </header>
+
+
+  <div class="menu">
+    <nav>
+      <!-- role="navigation" -->
+      <ul id="menu" class="headerItem">
+        <li><a href="#sectionHome" id="homeMenu">Home</a></li>
+        <li><a href="#about" id="aboutMenu">Entre nous</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contactForm">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="sectionHome">
+    <div class="welcome" id="home">
+
+      <div class="rectangleRuttar zeropx">
+      </div>
+
+      <div class="rectangleWD zeropx">
+      </div>
+
+      <!-- <div class="rectangleMenu farRight">
+						<div class="menuDiv"></div>
+						<div class="menuDiv"></div>
+						<div class="menuDiv"></div>
+					</div> -->
+
+      <div class="logo hide">
+        <h1><span style="font-weight: 600">cre</span><span style="font-weight: 100">app</span></h1>
+        <span class="webDesigner hide"><strong>WEB Designer</strong></span>
+      </div>
+      <a href="#about">
+        <div class="downArrow fade">
+          <div class="leftSideArrow">
+          </div>
+          <div class="rightSideArrow">
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <div id="wrapper">
+
+    <section id="sectionAbout">
+
+      <article id="about">
+        <div class="leftAbout wow fadeInUp">
+          <h2>En quelques mots</h2>
+        </div>
+        <div class="rightAbout wow fadeInUp" data-wow-delay="300ms">
+          <p class="wow fadeInUp">Inspirés par la nature, nous sommes à la recherche de l'harmonie, à l'écoute
+            des besoins, attentifs aux tendances et réactifs aux changements. </p>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="about ">
+          <h2><span>DE VOUS A NOUS.</span></h2>
+
+        </div>
+        <div class="divUnderAbout">
+
+          <div class="underAbout wow fadeInUp" id="ecoute">
+            <figure>
+              <img src="./src/img/crayonLight.jpg"
+                alt="Cahier sur lequel est posé un crayon, une gomme et un taille-crayon représentant le stade de conception d'un site web ou d'une application web"
+                class="imgUnderAbout">
+              <figcaption>Conception</figcaption>
+            </figure>
+            <div class="comment">
+              <p>Ensemble, nous analysons les besoins, mettons en place le concept et définissons les
+                grandes lignes du projet.</p>
+            </div>
+          </div>
+
+          <div class="underAbout wow fadeInUp" data-wow-delay="300ms" id="planification">
+            <figure>
+              <img src="./src/img/mesureToolsLight.jpg"
+                alt="Règle et mètre à mesurer représentant le stade de planification d'un site web ou d'une application web"
+                class="imgUnderAbout">
+              <figcaption>Planification</figcaption>
+            </figure>
+            <div class="comment">
+              <p>La charte graphique du <strong>site</strong> ou de l'<strong>application</strong> est
+                mise en place, le projet est planifié jusqu'au plus petits détails.</p>
+            </div>
+          </div>
+
+          <div class="underAbout wow fadeInUp" data-wow-delay="600ms" id="realisation">
+            <figure>
+              <img src="./src/img/tools2Light.jpg"
+                alt="Plusieurs outils dont pince et marteau représentants le stade de réalisation d'un site web ou d'une application web"
+                class="imgUnderAbout">
+              <figcaption>Réalisation</figcaption>
+            </figure>s
+            <div class="comment">
+              <p>À l'aide des dernières technologies du <strong>web</strong>, nous nous lançons dans la
+                <strong>programmation</strong> afin de réaliser ce que nous avons défini ensemble
+                ultérieurement. </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="clear">
+        </div>
+        <div>
+          <div id="seed" class="sentence" data-text="Il suffit d'une première graine..."></div>
+        </div>
+      </article>
+
+      <div class="cover full-width">
+      </div>
+
+    </section>
+
+    <section id="sectionServices">
+
+      <article id="services">
+        <!-- <div class="full-width empty">
+							</div> -->
+        <div class="about full-width">
+          <h2>SERVICES.</h2>
+        </div>
+        <div class="divUnderAbout">
+          <a href="webDesignPage.html">
+            <div class="underAbout " id="webDesign">
+              <span>
+                <h3><strong>WEB DESIGN</strong></h3>
+              </span>
+            </div>
+          </a>
+          <div class="greenDiv"></div>
+          <a href="webAppPage.html">
+            <div class="underAbout " id="webApp">
+              <span>
+                <h3><strong>WEB APP</strong></h3>
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="clear">
+        </div>
+        <div>
+          <div id="team" class="sentence" data-text="...et d'une équipe enthousiaste!"></div>
+        </div>
+
+      </article>
+      <div class="fullscreen-bg full-width hide">
+        <video playsinline loop muted autoplay class="fullscreen-bg__video ">
+          <source src="./src/img/fourmis5.webm" type="video/webm">
+          <source src="./src/img/fourmis5.mp4" type="video/mp4">
+          <source src="./src/img/fourmis5.ogg" type="video/ogg">
+        </video>
+      </div>
+    </section>
+
+    <section id="contactForm">
+      <div id="map" class="full-width">
+      </div>
+      <div class="empty2 wow fadeInUp" id="contact">
+        <form id="gform" method="POST"
+          action="https://script.google.com/macros/s/AKfycbzd4bQYT8Z8yb4s0fOGLiBcwHgFQN__sd8HHma7FsILoONy9L8C/exec">
+          <input type="text" name="nom" placeholder="Votre Nom" required><br>
+          <input type="email" name="email" placeholder="Votre adresse email" required><br>
+          <textarea class="inputText" rows="10" cols="5" placeholder="Laissez nous un petit message"></textarea><br>
+          <input type="submit" name="Envoyer" value="ENVOYER" id="sendButton">
+        </form>
+      </div>
+      <!-- <div class="empty2 wow fadeInUp" id="contact">
+							<form method="POST" action="mailto:ephraimichael@gmail.com" enctype="text/plain">
+								<input type="text" name="nom" placeholder="Votre Nom"><br>
+								<input type="email" name="email" placeholder="Votre adresse email"><br>
+								<textarea class="inputText" rows="10" cols="5" placeholder="Laissez nous un petit message"></textarea><br>
+								<input type="submit" name="Envoyer" value="ENVOYER" id="sendButton">
+							</form>
+					</div> -->
+      <script>
+        function initMap() {
+          var uluru = {
+            lat: 46.191282,
+            lng: 6.154799
+          };
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru,
+            styles: [{
+                elementType: 'geometry',
+                stylers: [{
+                  color: '#242f3e'
+                }]
+              },
+              {
+                elementType: 'labels.text.stroke',
+                stylers: [{
+                  color: '#242f3e'
+                }]
+              },
+              {
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#746855'
+                }]
+              },
+              {
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#d59563'
+                }]
+              },
+              {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#d59563'
+                }]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{
+                  color: '#263c3f'
+                }]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#6b9a76'
+                }]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{
+                  color: '#38414e'
+                }]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [{
+                  color: '#212a37'
+                }]
+              },
+              {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#9ca5b3'
+                }]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{
+                  color: '#746855'
+                }]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{
+                  color: '#1f2835'
+                }]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#f3d19c'
+                }]
+              },
+              {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{
+                  color: '#2f3948'
+                }]
+              },
+              {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#d59563'
+                }]
+              },
+              {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{
+                  color: '#17263c'
+                }]
+              },
+              {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#515c6d'
+                }]
+              },
+              {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [{
+                  color: '#17263c'
+                }]
+              }
+            ]
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv2i8Das8W3j2xw5cj7VN7-dcJJVekbiY&callback=initMap">
+      </script>
+    </section>
+    <footer class="full-width">
+      <p itemscope itemtype="http://schema.org/address"><span itemprop="streetAddress"
+          content="Avenue de Miremont 9">Avenue de Miremont 9</span><br> <span itemprop="postalCode" content="1206">1206
+        </span><span itemprop="addressLocality" content="Geneva">Genève</span></p>
+      <p>Copyright © 2020 creapp, création de <strong>sites et applications web</strong> Genève</p>
+    </footer>
+
+
+    <script src="./app/javascript/myCode.js"></script>
+    <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+    </script>
+    <!-- </div> -->
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <p>Avec assez de volonté, nous pouvons réaliser l'impossible...</p> -->
+<!-- <p>“Toute chose qui est, si elle n'était, serait énormément improbable.” <br><br><span>Paul Valéry</span></p> -->
+<!-- <p>“Lorsque vous avez éliminé l’impossible, ce qui reste, si improbable soit-il, est nécessairement la vérité.” Arthur Conan Doyle</p> -->
+
+<!-- <div class="printing full-width">
+	<div class="red print"></div>
+	<div class="red2 print"></div>
+	<div class="red3 print"></div>
+	<div class="green print"></div>
+	<div class="black print"></div>
+	<div class="black2 print"></div>
+	<div class="black3 print"></div>
+	<div class="brun print"></div>
+	<div class="brun2 print"></div>
+	<div class="brun3 print"></div>
+	<div class="brun4 print"></div>
+	<div class="brun5 print"></div>
+	<div class="brun6 print"></div>
+</div> -->
+
+<!-- <canvas id="canvas" class="full-width" height="30" >canvas</canvas> -->
+
+
+
+
+<!-- <div class="printer">
+	<div class="printerOne"></div>
+	<div class="printerTwo"></div>
+</div> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title> -->
+
+<!-- update the version number as needed -->
+<!-- <script defer src="/__/firebase/7.15.0/firebase-app.js"></script> -->
+<!-- include only the Firebase features as you need -->
+<!-- <script defer src="/__/firebase/7.15.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-storage.js"></script> -->
+<!-- initialize the SDK after all desired features are loaded -->
+<!-- <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html> -->
